@@ -12,7 +12,6 @@
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
-    "@rollup/rollup-darwin-x64": "^4.60.1",
     "@tailwindcss/vite": "^4.2.1",
     "framer-motion": "^12.34.3",
     "lucide-react": "^0.575.0",
