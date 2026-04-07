@@ -27,14 +27,14 @@ export default function FloatingActions() {
     >
       <a
         href="tel:+306909591450"
-        aria-label="Κλήσε"
+        aria-label="Κλήση"
         className="grid h-12 place-items-center rounded-2xl bg-white/95 font-semibold text-slate-950 shadow-lg backdrop-blur-md transition hover:scale-[1.02] hover:bg-white"
       >
         <Phone className="h-5 w-5" strokeWidth={2} />
       </a>
 
       <a
-        href="https://maps.google.com"
+        href="https://www.google.com/maps/dir/?api=1&destination=https://maps.app.goo.gl/LW2ouBPaqgKYamYA6"
         target="_blank"
         rel="noreferrer"
         aria-label="Οδηγίες"
