@@ -34,7 +34,7 @@ export default function FloatingActions() {
       </a>
 
       <a
-        href="https://www.google.com/maps/dir/?api=1&destination=https://maps.app.goo.gl/LW2ouBPaqgKYamYA6"
+        href="https://www.google.com/maps/dir/?api=1&destination=39.624467663877724,22.39640757081439"
         target="_blank"
         rel="noreferrer"
         aria-label="Οδηγίες"
