@@ -1,6 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import { Facebook, Instagram } from "lucide-react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const container: Variants = {
   hidden: {},
@@ -33,7 +33,6 @@ export default function Footer() {
         text-white
       "
     >
-      
       <motion.div
         variants={container}
         initial="hidden"
@@ -63,7 +62,7 @@ export default function Footer() {
               href="https://www.facebook.com/thomas.gousoulis"
               target="_blank"
               rel="noreferrer"
-              className="p-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/6.5 hover:border-white/20 transition"
+              className="p-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/6.5 hover:border-[#225080] transition"
               aria-label="Facebook"
             >
               <Facebook className="h-4 w-4 text-white/80" />
@@ -73,7 +72,7 @@ export default function Footer() {
               href="https://www.instagram.com/thomasgousoulis"
               target="_blank"
               rel="noreferrer"
-              className="p-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/6.5 hover:border-white/20 transition"
+              className="p-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/6.5 hover:border-[#225080] transition"
               aria-label="Instagram"
             >
               <Instagram className="h-4 w-4 text-white/80" />
@@ -143,14 +142,10 @@ export default function Footer() {
         <div>© {year} Thomas Gousoulis. All rights reserved.</div>
 
         <div className="md:max-w-130 md:text-right">
-          Το περιεχόμενο είναι ενημερωτικό και δεν υποκαθιστά
-          ιατρική εξέταση ή διάγνωση.
+          Το περιεχόμενο είναι ενημερωτικό και δεν υποκαθιστά ιατρική εξέταση ή
+          διάγνωση.
         </div>
       </motion.div>
     </footer>
   );
 }
-
-
-
-

@@ -98,7 +98,7 @@ export default function About() {
               className="text-center overflow-hidden
                 border rounded-2xl p-4 border-white/10 bg-white/5
                 shadow-[0_18px_50px_rgba(0,0,0,0.35)]
-                transition hover:-translate-y-0.5 hover:bg-indigo-300/25 hover:border-indigo-300/60 font-semibold leading-tight"
+                transition hover:-translate-y-0.5 hover:border-[#225080] font-semibold leading-tight"
             >
               <a>ΒΙΟΓΡΑΦΙΚΟ ΣΗΜΕΙΩΜΑ</a>
             </div>

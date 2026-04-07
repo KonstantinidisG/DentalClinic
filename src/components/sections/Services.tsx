@@ -196,7 +196,7 @@ export default function Services({ motionKey }: { motionKey: number }) {
               suffix="+"
               title="ΧΡΟΝΙΑ ΕΜΠΕΙΡΙΑΣ"
               subtitle="Σταθερή ποιότητα και ανθρώπινη προσέγγιση"
-              colorClassName="bg-gradient-to-r from-cyan-800 to-sky-900 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(56,189,248,0.25)]"
+              colorClassName="bg-gradient-to-r from-[#225080] to-[#225080] bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(56,189,248,0.25)]"
             />
 
             <AnimatedStat
@@ -204,7 +204,7 @@ export default function Services({ motionKey }: { motionKey: number }) {
               suffix="+"
               title="ΑΣΘΕΝΕΙΣ"
               subtitle="Εμπιστεύτηκαν τη φροντίδα και τη συνέπειά μας"
-              colorClassName="bg-gradient-to-r from-cyan-800 to-sky-900 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(56,189,248,0.25)]"
+              colorClassName="bg-gradient-to-r from-[#225080] to-[#225080] bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(56,189,248,0.25)]"
             />
 
             <AnimatedStat
@@ -213,7 +213,7 @@ export default function Services({ motionKey }: { motionKey: number }) {
               title="ΑΞΙΟΛΟΓΗΣΗ"
               subtitle="Υψηλή ικανοποίηση και θετική εμπειρία"
               decimals={1}
-              colorClassName="bg-gradient-to-r from-cyan-800 to-sky-900 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(56,189,248,0.25)]"
+              colorClassName="bg-gradient-to-r from-[#225080] to-[#225080] bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(56,189,248,0.25)]"
             />
           </div>
         </motion.div>

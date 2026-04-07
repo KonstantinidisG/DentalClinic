@@ -1,13 +1,7 @@
 import { motion, type Variants } from "framer-motion";
-import {
-  Mail,
-  MapPin,
-  Navigation,
-  Phone,
-  CalendarClock,
-} from "lucide-react";
+import { Mail, MapPin, Navigation, Phone, CalendarClock } from "lucide-react";
 import "maplibre-gl/dist/maplibre-gl.css";
-import Map, {Marker, NavigationControl} from "react-map-gl/maplibre";
+import Map, { Marker, NavigationControl } from "react-map-gl/maplibre";
 
 const container: Variants = {
   hidden: {},
@@ -99,7 +93,7 @@ function getOpenStatus(): OpenStatus {
       return {
         open: false,
         label: `Κλειστά τώρα · Ανοίγουμε ${dayNames[nextDay]} στις ${fmt(
-          nextSchedule.start
+          nextSchedule.start,
         )}`,
       };
     }
@@ -128,7 +122,9 @@ export default function Contact() {
       >
         {/* Heading */}
         <motion.div variants={fadeUp} className="text-center">
-          <h2 className="font-extrabold text-3xl tracking-tight">Επικοινωνία</h2>
+          <h2 className="font-extrabold text-3xl tracking-tight">
+            Επικοινωνία
+          </h2>
           <p className="text-white/65 mt-3 max-w-2xl mx-auto leading-relaxed">
             Καλέστε μας ή δείτε οδηγίες. Απαντάμε άμεσα και σας εξυπηρετούμε
             σύμφωνα με το ωράριο λειτουργίας.
@@ -168,37 +164,36 @@ export default function Contact() {
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(600px_180px_at_20%_0%,rgba(110,231,255,0.14),transparent_55%),radial-gradient(600px_180px_at_80%_0%,rgba(167,139,250,0.14),transparent_55%)]" />
 
             <div className="relative overflow-hidden rounded-[22px] border border-white/10 h-115">
+              <Map
+                initialViewState={{
+                  longitude: 22.4178,
+                  latitude: 39.6467,
+                  zoom: 15,
+                  pitch: 35,
+                  bearing: -8,
+                }}
+                mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+                style={{ width: "100%", height: "100%" }}
+              >
+                <NavigationControl position="top-right" />
 
-            <Map
-            initialViewState={{
-                longitude: 22.4178,
-                latitude: 39.6467,
-                zoom: 15,
-                pitch: 35,
-                bearing: -8
-            }}
-            mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
-            style={{ width: "100%", height: "100%" }}
-            >
-            <NavigationControl position="top-right" />
-
-            <Marker longitude={22.4178} latitude={39.6467} anchor="bottom">
-                <div className="rounded-full border border-white/20 bg-slate-900 p-2 shadow-xl backdrop-blur-md">
-                <MapPin className="h-5 w-5 text-cyan-300" />
-                </div>
-            </Marker>
-
-            </Map>
+                <Marker longitude={22.4178} latitude={39.6467} anchor="bottom">
+                  <div className="rounded-full border border-white/20 bg-slate-900 p-2 shadow-xl backdrop-blur-md">
+                    <MapPin className="h-5 w-5 text-cyan-300" />
+                  </div>
+                </Marker>
+              </Map>
             </div>
 
             {/* floating info badge */}
             <div className="absolute left-5 top-5 rounded-2xl border border-white/15 bg-slate-950/70 backdrop-blur-xl px-4 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.35)] max-w-[320px]">
-              <div className="font-semibold text-sm">Οδοντιατρείο Thomas Gousoulis</div>
+              <div className="font-semibold text-sm">
+                Οδοντιατρείο Thomas Gousoulis
+              </div>
               <div className="text-white/65 text-xs mt-1 flex items-center gap-2">
                 <MapPin className="h-3.5 w-3.5 shrink-0" />
                 Καραολή & Δημητρίου 47, Νεάπολη, Λάρισα
               </div>
-
             </div>
           </div>
         </motion.div>
@@ -229,10 +224,13 @@ export default function Contact() {
             },
           ].map(({ icon: Icon, label, value, href }) => {
             const card = (
-              <div className="group rounded-2xl border border-white/10 bg-white/5 p-5 shadow-[0_18px_50px_rgba(0,0,0,0.35)] transition hover:-translate-y-0.5 hover:bg-white/6.5 hover:border-white/20">
+              <div className="group rounded-2xl border border-white/10 bg-white/5 p-5 shadow-[0_18px_50px_rgba(0,0,0,0.35)] transition hover:-translate-y-0.5 hover:bg-white/6.5 hover:border-[#225080]">
                 <div className="flex items-start gap-3">
                   <div className="mt-0.5 shrink-0 rounded-xl border border-white/10 bg-white/5 p-2 shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
-                    <Icon className="h-5 w-5 text-white/85" aria-hidden="true" />
+                    <Icon
+                      className="h-5 w-5 text-white/85"
+                      aria-hidden="true"
+                    />
                   </div>
 
                   <div>
